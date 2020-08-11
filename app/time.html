@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function myfunction()
+{
+var d=new Date();
+var t1=new Date();
+t1.setHours(17,0,0);
+var t2=new Date();
+t2.setHours(19,0,0);
+if(d>=t1 && d<=t2)
+{
+<a href="index.php">Discuss</a>
+document.getElementById("btn").disabled=false;
+}
+else
+{
+alert("TIME");
+document.getElementById("btn").disabled=true;
+}
+}
+</script>
+</head>
+<body>
+<a href="index.php"> <button id="btn" onclick="myfunction()">Click</button></a>
+</body>
+</html>
